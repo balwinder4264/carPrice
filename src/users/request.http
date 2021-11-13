@@ -1,4 +1,13 @@
 ### Create a new user 
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+    "email":"test@test.com",
+    "password":"123456",
+    "hfjfj":"fgg"
+}
+### Create a new user 
 POST http://localhost:3000/auth/signin
 content-type: application/json
 
@@ -7,7 +16,11 @@ content-type: application/json
     "password":"123456",
     "hfjfj":"fgg"
 }
+### Print sign in user 
+GET  http://localhost:3000/auth/whoami
 
+### Print Sign out user 
+POST   http://localhost:3000/auth/signout
 ### Find Particular User
 GET  http://localhost:3000/auth/3
 ### Find all User with given email
@@ -25,4 +38,10 @@ content-type: application/json
     "email":"bal@gmail1.com",
     "password":"123456"
 }
+
+
+
+
+
+
 
